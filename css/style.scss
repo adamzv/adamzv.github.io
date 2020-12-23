@@ -122,7 +122,7 @@ button.btn, input.btn {
 }
 
 .hero-content {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   display: table;
   @include bp-medium {
@@ -205,6 +205,19 @@ button.btn, input.btn {
 /*--------------------------------------------------------------
 	3.0 Posts
 --------------------------------------------------------------*/
+#skills .container {
+  margin-top: 10em;
+  @include bp-xsmall {
+    margin-top: 2em;
+  }
+  .break {
+    margin: 8em 0;
+    @include bp-xsmall {
+      margin: 2em 0;
+    }
+  }
+}
+
 #portfolio .container {
   margin-top: 10em;
   @include bp-xsmall {

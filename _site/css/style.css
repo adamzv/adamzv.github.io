@@ -5910,7 +5910,7 @@ button.btn, input.btn {
       margin: 5em 0 5em 0; } }
 
 .hero-content {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   display: table; }
   @media only screen and (min-width: 992px) and (max-width: 1195px) {
@@ -5975,6 +5975,17 @@ button.btn, input.btn {
 /*--------------------------------------------------------------
 	3.0 Posts
 --------------------------------------------------------------*/
+#skills .container {
+  margin-top: 10em; }
+  @media only screen and (max-width: 768px) {
+    #skills .container {
+      margin-top: 2em; } }
+  #skills .container .break {
+    margin: 8em 0; }
+    @media only screen and (max-width: 768px) {
+      #skills .container .break {
+        margin: 2em 0; } }
+
 #portfolio .container {
   margin-top: 10em; }
   @media only screen and (max-width: 768px) {
