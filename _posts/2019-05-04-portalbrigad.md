@@ -1,6 +1,6 @@
 ---
 layout: inner
-position: right
+position: left
 title: 'PortalBrigad'
 date: 2019-05-04 13:14:00 +01:00
 categories: development
