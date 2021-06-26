@@ -1,6 +1,6 @@
 ---
 layout: inner
-position: left
+position: right
 title: 'Event Calendar'
 date: 2020-12-23 13:35:00 +01:00
 categories: development

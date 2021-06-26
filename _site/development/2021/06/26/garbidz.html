@@ -4,7 +4,7 @@
   <!-- Meta -->
   <meta charset="utf-8">
 
-  <title>FaceRecognitionApp - Hello. I'm Adam Zverka.</title>
+  <title>Garbidž - Hello. I'm Adam Zverka.</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content="yes" name="apple-mobile-web-app-capable">
@@ -26,6 +26,16 @@
   <link rel="stylesheet" href="/css/animate.min.css">
   <link rel="stylesheet" href="/css/style.css">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81SPKHBBT6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-81SPKHBBT6');
+  </script>
+  
 </head>
 <body class="">
 
@@ -70,7 +80,19 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
 
-          
+          <!-- ---
+layout: inner
+position: left
+title: 'Garbidž'
+date: 2021-06-26 18:32:00 +02:00
+categories: development
+tags: [Java, Spring Boot, Docker, Flutter]
+featured_image: '/img/posts/03_garbidz-1280x2680.png'
+project_link: 'https://github.com/adamzv/garbidz'
+button_icon: 'github'
+button_text: 'Visit Project'
+lead_text: 'Team project focused on simulating a startup which develops a mobile app for tracking and locating garbage cans around the city. Users can locate nearest containers (we're tracking each type of container available) or they can set up notification for the nearest waste collection. Mobile app was created using Flutter, for backend we used Spring Boot, MySQL db and Docker for deployment. Team consisted of 5 developers, I was the teamleader and a backend developer.'
+--- -->
 
 
         </div>
@@ -103,18 +125,6 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="http://localhost:4000/js/wow.min.js"></script>
     <script src="http://localhost:4000/js/app.js"></script>
-
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', ' G-81SPKHBBT6', 'auto');
-      ga('send', 'pageview');
-
-    </script>
 
     </body>
 </html>

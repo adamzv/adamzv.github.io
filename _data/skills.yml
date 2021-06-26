@@ -25,15 +25,15 @@
 
 - skill: Vue.js
   text: Lorem Ipsum
-  level: 3
-  remaining: 2
-
-- skill: Angular
-  text: Lorem Ipsum
   level: 2
   remaining: 3
 
+- skill: Angular
+  text: Lorem Ipsum
+  level: 1
+  remaining: 4
+
 - skill: SQL
   text: Lorem Ipsum
-  level: 3
-  remaining: 2
+  level: 2
+  remaining: 3

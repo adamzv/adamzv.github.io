@@ -5,9 +5,42 @@
     <description>I'm a software developer and student from Nitra interested in backend development and IoT. Currently I'm pursuing a Master's degree in Applied Informatics at Constantine the Philosopher University in Nitra and I'm working part-time as Java Developer at Muehlbauer Automation s.r.o.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 11 Jan 2021 17:11:52 +0100</pubDate>
-    <lastBuildDate>Mon, 11 Jan 2021 17:11:52 +0100</lastBuildDate>
+    <pubDate>Sat, 26 Jun 2021 20:55:08 +0200</pubDate>
+    <lastBuildDate>Sat, 26 Jun 2021 20:55:08 +0200</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Garbidž</title>
+        <description>&lt;!-- ---
+layout: inner
+position: left
+title: 'Garbidž'
+date: 2021-06-26 18:32:00 +02:00
+categories: development
+tags: [Java, Spring Boot, Docker, Flutter]
+featured_image: '/img/posts/03_garbidz-1280x2680.png'
+project_link: 'https://github.com/adamzv/garbidz'
+button_icon: 'github'
+button_text: 'Visit Project'
+lead_text: 'Team project focused on simulating a startup which develops a mobile app for tracking and locating garbage cans around the city. Users can locate nearest containers (we're tracking each type of container available) or they can set up notification for the nearest waste collection. Mobile app was created using Flutter, for backend we used Spring Boot, MySQL db and Docker for deployment. Team consisted of 5 developers, I was the teamleader and a backend developer.'
+--- --&gt;
+</description>
+        <pubDate>Sat, 26 Jun 2021 18:32:00 +0200</pubDate>
+        <link>http://localhost:4000/development/2021/06/26/garbidz.html</link>
+        <guid isPermaLink="true">http://localhost:4000/development/2021/06/26/garbidz.html</guid>
+        
+        <category>Java</category>
+        
+        <category>Spring Boot</category>
+        
+        <category>Docker</category>
+        
+        <category>Flutter</category>
+        
+        
+        <category>development</category>
+        
+      </item>
     
       <item>
         <title>Event Calendar</title>
@@ -85,25 +118,6 @@
         <category>Android</category>
         
         <category>IBM Cloud</category>
-        
-        
-        <category>development</category>
-        
-      </item>
-    
-      <item>
-        <title>FaceRecognitionApp</title>
-        <description>
-</description>
-        <pubDate>Sat, 09 Jun 2018 14:13:00 +0200</pubDate>
-        <link>http://localhost:4000/development/2018/06/09/face-recognition-app.html</link>
-        <guid isPermaLink="true">http://localhost:4000/development/2018/06/09/face-recognition-app.html</guid>
-        
-        <category>Java</category>
-        
-        <category>Android</category>
-        
-        <category>IBM Watson Visual Recognition</category>
         
         
         <category>development</category>

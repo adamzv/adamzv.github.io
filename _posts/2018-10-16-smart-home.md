@@ -1,11 +1,11 @@
 ---
 layout: inner
-position: right
+position: left
 title: 'Smart home'
 date: 2018-10-16 13:15:00 +01:00
 categories: development
 tags: [Python, Flask, Arduino, Android, IBM Cloud]
-featured_image: 'https://via.placeholder.com/200'
+# featured_image: 'https://via.placeholder.com/200'
 project_link: 'https://github.com/adamzv/PMA-Inteligentna-domacnost'
 button_icon: 'github'
 button_text: 'Visit Project'
