@@ -102,13 +102,15 @@
 
 <h3 id="header-3">Header 3</h3>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// Javascript code with syntax highlighting.</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// Javascript code with syntax highlighting.
+</span>
 <span class="kd">var</span> <span class="nx">fun</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">lang</span><span class="p">(</span><span class="nx">l</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">dateformat</span><span class="p">.</span><span class="nx">i18n</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">./lang/</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">l</span><span class="p">)</span>
   <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
 <span class="p">}</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># Ruby code with syntax highlighting</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># Ruby code with syntax highlighting
+</span>
 <span class="no">GitHubPages</span><span class="o">::</span><span class="no">Dependencies</span><span class="p">.</span><span class="nf">gems</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">gem</span><span class="p">,</span> <span class="n">version</span><span class="o">|</span>
   <span class="n">s</span><span class="p">.</span><span class="nf">add_dependency</span><span class="p">(</span><span class="n">gem</span><span class="p">,</span> <span class="s2">"= </span><span class="si">#{</span><span class="n">version</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="k">end</span></code></pre></figure>
@@ -259,7 +261,8 @@ end
 <h4 id="bash">Bash</h4>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">&gt;</span>_ ssh <span class="nt">-i</span> ~/.ssh/id_rsa account@host.com
-account@host:~<span class="err">$</span>
+account@host:~<span class="nv">$
+</span>
 <span class="nv">$ var</span><span class="o">=</span><span class="s2">"my-value"</span>
 <span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$var</span>
 my-value
@@ -298,16 +301,26 @@ my-value
 
 <h4 id="yaml">YAML</h4>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1">### Phantom settings</span>
-<span class="na">paginate</span><span class="pi">:</span> <span class="m">10</span>
-<span class="na">footer_text</span><span class="pi">:</span> <span class="s1">'</span><span class="s">©</span><span class="nv"> </span><span class="s">2018</span><span class="nv"> </span><span class="s">Jami</span><span class="nv"> </span><span class="s">Gibbs'</span>
-<span class="na">admin_name</span><span class="pi">:</span> <span class="s1">'</span><span class="s">Jami</span><span class="nv"> </span><span class="s">Gibbs'</span>
-<span class="na">google_analytics</span><span class="pi">:</span> <span class="s2">"</span><span class="s">UA-9999999-99"</span> <span class="c1"># Update with your own tracking ID</span>
-
-<span class="c1">#### Phantom Navigation menu</span>
-<span class="na">enable_nav</span><span class="pi">:</span> <span class="no">true</span>
-<span class="na">nav_item</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="pi">{</span> <span class="nv">url</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/'</span><span class="pi">,</span> <span class="nv">text</span><span class="pi">:</span> <span class="s1">'</span><span class="s">Home'</span> <span class="pi">}</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1">### Phantom settings
+</span>
+<span class="na">paginate</span><span class="pi">:</span> <span class="m">10</span><span class="err">
+</span>
+<span class="na">footer_text</span><span class="pi">:</span> <span class="s1">'</span><span class="s">©</span><span class="nv"> </span><span class="s">2018</span><span class="nv"> </span><span class="s">Jami</span><span class="nv"> </span><span class="s">Gibbs'</span><span class="err">
+</span>
+<span class="na">admin_name</span><span class="pi">:</span> <span class="s1">'</span><span class="s">Jami</span><span class="nv"> </span><span class="s">Gibbs'</span><span class="err">
+</span>
+<span class="na">google_analytics</span><span class="pi">:</span> <span class="s2">"</span><span class="s">UA-9999999-99"</span> <span class="c1"># Update with your own tracking ID
+</span>
+<span class="err">
+</span>
+<span class="c1">#### Phantom Navigation menu
+</span>
+<span class="na">enable_nav</span><span class="pi">:</span> <span class="no">true</span><span class="err">
+</span>
+<span class="na">nav_item</span><span class="pi">:</span><span class="err">
+</span>
+  <span class="pi">-</span> <span class="pi">{</span> <span class="nv">url</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/'</span><span class="pi">,</span> <span class="nv">text</span><span class="pi">:</span> <span class="s1">'</span><span class="s">Home'</span> <span class="pi">}</span><span class="err">
+</span>
   <span class="pi">-</span> <span class="pi">{</span> <span class="nv">url</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/about'</span><span class="pi">,</span> <span class="nv">text</span><span class="pi">:</span> <span class="s1">'</span><span class="s">About'</span> <span class="pi">}</span></code></pre></figure>
 
 
