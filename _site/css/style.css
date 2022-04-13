@@ -6075,6 +6075,9 @@ input.btn {
       @media only screen and (max-width: 768px) {
         .content-wrap .content .excerpt {
           width: 100%; } }
+    .content-wrap .content .experience-detail {
+      width: 100%;
+      text-align: justify; }
     .content-wrap .content button {
       font-size: 16px;
       margin-left: 0;
@@ -6093,6 +6096,8 @@ input.btn {
     .content-wrap .content .categories span {
       color: #b9b1ad;
       background-color: #efebe9; }
+  .content-wrap .experience {
+    margin-right: 5em; }
 
 /*--------------------------------------------------------------
 	4.0 Footer

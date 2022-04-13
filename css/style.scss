@@ -314,6 +314,10 @@ input.btn {
         width: 100%;
       }
     }
+    .experience-detail {
+      width: 100%;
+      text-align: justify;
+    }
     button {
       font-size: 16px;
       margin-left: 0;
@@ -335,6 +339,9 @@ input.btn {
       color: #b9b1ad;
       background-color: #efebe9;
     }
+  }
+  .experience {
+    margin-right: 5em;
   }
 }
 

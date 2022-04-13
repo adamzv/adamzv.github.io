@@ -1,0 +1,30 @@
+- role: Software Developer (Data processing)
+  time: 2022-Present
+  company: Muehlbauer Automation s.r.o.
+  details: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+    fugiat nulla pariatur.
+  technologies_used: [Scala, Apache Spark, Apache Cassandra, PostgreSQL]
+
+- role: Software Developer (Long-term internship)
+  time: 2019-2022
+  company: Muehlbauer Automation s.r.o.
+  details: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+    fugiat nulla pariatur.
+  technologies_used:
+    [
+      Java EE,
+      Angular,
+      Typescript,
+      Scala,
+      Apache Spark,
+      Apache Cassandra,
+      PostgreSQL,
+    ]

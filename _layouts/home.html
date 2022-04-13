@@ -1,80 +1,128 @@
 {% include header.html %}
 
-    {% include home-hero.html %}
+{% include home-hero.html %}
 
-    <section id="skills">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
+<section id="skills">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
 
-            {% if site.skills_title != '' %}
-            <h2 class="section-title text-center">{{ site.skills_title }}</h2>
-            {% endif %}
-            {% if site.section_subtitle != '' %}
-            <p class="section-subtitle text-center">{{ site.section_subtitle }}</p>
-            {% endif %}
+        {% if site.skills_title != '' %}
+        <h2 class="section-title text-center">{{ site.skills_title }}</h2>
+        {% endif %}
+        {% if site.section_subtitle != '' %}
+        <p class="section-subtitle text-center">{{ site.section_subtitle }}</p>
+        {% endif %}
 
-            <div class="break"></div>
+        <div class="break"></div>
 
-            <div class="wow fadeIn">
-              <div class="content-wrap">
-                <div class="row text-center">
-                  {% for item in site.data.skills %}
-                  <div class="col-md-4" style="margin-bottom: 32px;">
-                    <div class="card">
-                      <div class="card-body">
-                        <h4 class="card-title">{{ item.skill }}</h4>
-                        <p class="card-text">
-                          {% for i in (1..item.level) %}
-                          <span class="fa fa-circle"></span>
-                          {% endfor %}
-                          {% for i in (1..item.remaining) %}
-                          <span class="fa fa-circle-o"></span>
-                          {% endfor %}
-                          </p>
-                      </div>
-                    </div>
+        <div class="wow fadeIn">
+          <div class="content-wrap">
+            <div class="row text-center">
+              {% for item in site.data.skills %}
+              <div class="col-md-4" style="margin-bottom: 32px;">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">{{ item.skill }}</h4>
+                    <p class="card-text">
+                      {% for i in (1..item.level) %}
+                      <span class="fa fa-circle"></span>
+                      {% endfor %}
+                      {% for i in (1..item.remaining) %}
+                      <span class="fa fa-circle-o"></span>
+                      {% endfor %}
+                    </p>
                   </div>
-                  {% endfor %}
                 </div>
               </div>
+              {% endfor %}
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
+<section id="experience">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
 
-            {% if site.section_title != '' %}
-            <h2 class="section-title text-center">{{ site.section_title }}</h2>
-            {% endif %}
-            {% if site.section_subtitle != '' %}
-            <p class="section-subtitle text-center">{{ site.section_subtitle }}</p>
-            {% endif %}
+        {% if site.experience_title != '' %}
+        <h2 class="section-title text-center">{{ site.experience_title }}</h2>
+        {% endif %}
+        {% if site.section_subtitle != '' %}
+        <p class="section-subtitle text-center">{{ site.section_subtitle }}</p>
+        {% endif %}
 
-            <div class="break"></div>
+        <div class="break"></div>
 
-            {% for post in paginator.posts %}
-              <div class="wow fadeIn">
-              {% if post.position == "left" %}
-                {% include content-left.html %}
-              {% endif %}
+        <div class="wow fadeIn">
+          <div class="content-wrap">
 
-              {% if post.position == "right" %}
-                {% include content-right.html %}
-              {% endif %}
+            <div class="row">
+              {% for experience in site.data.experience %}
+              <div class="col-xs-12">
+                <div class="content experience">
+                  <h3 class="title">{{experience.role}}</h3>
+
+                  <!-- company   time -->
+                  <div class="row">
+                    <div class="col-xs-6">{{experience.company}}</div>
+                    <div class="col-xs-6" style="text-align: right;">{{experience.time}}</div>
+                  </div>
+                  <p class="experience-detail">{{experience.details}}</p>
+
+                  <!-- tags -->
+                  {% if experience.technologies_used != empty %}
+                  <div class="tags">
+                    {% for tag in experience.technologies_used %}
+                    <span>{{ tag }}</span>
+                    {% endfor %}
+                  </div>
+                  {% endif %}
+                </div>
               </div>
-            {% endfor %}
-
-            {% include pagination.html %}
-
+              {% endfor %}
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+</section>
+
+<section id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        {% if site.section_title != '' %}
+        <h2 class="section-title text-center">{{ site.section_title }}</h2>
+        {% endif %}
+        {% if site.section_subtitle != '' %}
+        <p class="section-subtitle text-center">{{ site.section_subtitle }}</p>
+        {% endif %}
+
+        <div class="break"></div>
+
+        {% for post in paginator.posts %}
+        <div class="wow fadeIn">
+          {% if post.position == "left" %}
+          {% include content-left.html %}
+          {% endif %}
+
+          {% if post.position == "right" %}
+          {% include content-right.html %}
+          {% endif %}
+        </div>
+        {% endfor %}
+
+        {% include pagination.html %}
+
+      </div>
+    </div>
+  </div>
+</section>
 
 {% include footer.html %}

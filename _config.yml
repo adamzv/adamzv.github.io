@@ -23,6 +23,7 @@ github_username: "adamzv"
 instagram_username: "adam.zverka"
 
 skills_title: "Skills"
+experience_title: "Work experience"
 section_title: "Projects"
 
 # Build settings
@@ -97,7 +98,7 @@ pagination:
 ### Phantom settings
 footer_text: "© 2022 Adam Zverka"
 admin_name: "Adam Zverka"
-google_analytics: "G-81SPKHBBT6" # Update with your own tracking ID
+#google_analytics: "G-81SPKHBBT6" # Update with your own tracking ID
 enable_contact: true
 
 #### Phantom Navigation menu
