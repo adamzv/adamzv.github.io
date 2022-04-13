@@ -107,5 +107,6 @@ nav_item:
   - { url: "/", text: "Home" }
   # - { url: '/about', text: 'About' }
   - { url: "#skills", text: "Skills" }
+  - { url: "#experience", text: "Experience" }
   - { url: "#portfolio", text: "Projects" }
   # - { url: '/blog', text: 'Blog' }
