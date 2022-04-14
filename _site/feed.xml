@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hello. I'm Adam Zverka.</title>
-    <description>I'm a software developer and student from Nitra interested in backend development and IoT. Currently I'm pursuing a Master's degree in Applied Informatics at Constantine the Philosopher University in Nitra and I'm working part-time as Java Developer at Muehlbauer Automation s.r.o.</description>
+    <title>Adam Zverka</title>
+    <description>I'm a software developer and student from Nitra interested in backend development, cloud, IoT and new technologies.
+Currently, I'm pursuing a Master's degree in Applied Informatics at Constantine the Philosopher University in Nitra 
+and I'm working part-time as a Java Developer at Muehlbauer Automation s.r.o working with big data technologies. 
+&lt;br&gt;&lt;br&gt;I love to build scale models ✈️, paint miniatures 🗿, read and learn new things 📖, 
+tinker with microcontrollers 💻, and take photographs 📸.
+</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 26 Jun 2021 20:55:08 +0200</pubDate>
-    <lastBuildDate>Sat, 26 Jun 2021 20:55:08 +0200</lastBuildDate>
+    <pubDate>Thu, 14 Apr 2022 16:02:27 +0200</pubDate>
+    <lastBuildDate>Thu, 14 Apr 2022 16:02:27 +0200</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
         <title>Garbidž</title>
-        <description>&lt;!-- ---
-layout: inner
-position: left
-title: 'Garbidž'
-date: 2021-06-26 18:32:00 +02:00
-categories: development
-tags: [Java, Spring Boot, Docker, Flutter]
-featured_image: '/img/posts/03_garbidz-1280x2680.png'
-project_link: 'https://github.com/adamzv/garbidz'
-button_icon: 'github'
-button_text: 'Visit Project'
-lead_text: 'Team project focused on simulating a startup which develops a mobile app for tracking and locating garbage cans around the city. Users can locate nearest containers (we're tracking each type of container available) or they can set up notification for the nearest waste collection. Mobile app was created using Flutter, for backend we used Spring Boot, MySQL db and Docker for deployment. Team consisted of 5 developers, I was the teamleader and a backend developer.'
---- --&gt;
+        <description>
 </description>
         <pubDate>Sat, 26 Jun 2021 18:32:00 +0200</pubDate>
         <link>http://localhost:4000/development/2021/06/26/garbidz.html</link>

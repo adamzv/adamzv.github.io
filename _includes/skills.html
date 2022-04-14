@@ -1,0 +1,21 @@
+<div class="content-wrap">
+  <div class="row text-center">
+    {% for item in site.data.skills %}
+    <div class="col-md-4" style="margin-bottom: 32px;">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">{{ item.skill }}</h4>
+          <p class="card-text">
+            {% for i in (1..item.level) %}
+            <span class="fa fa-circle"></span>
+            {% endfor %}
+            {% for i in (1..item.remaining) %}
+            <span class="fa fa-circle-o"></span>
+            {% endfor %}
+          </p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
