@@ -13,7 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Hello. I'm Adam Zverka."
+title_landing: "Hello. I'm Adam Zverka."
+title: "Adam Zverka"
 email: "adamzverka@gmail.com"
 description: |
   I'm a software developer and student from Nitra interested in backend development, cloud, IoT and new technologies.

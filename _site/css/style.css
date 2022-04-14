@@ -6094,6 +6094,17 @@ input.btn {
     .content-wrap .content .experience-detail {
       width: 100%;
       text-align: justify; }
+    .content-wrap .content li.experience-detail {
+      list-style-type: none;
+      line-height: 1.8;
+      font-size: 1.3em; }
+    .content-wrap .content li::before {
+      content: "-";
+      color: #858585;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+      font-size: 1.2em; }
     .content-wrap .content button {
       font-size: 16px;
       margin-left: 0;

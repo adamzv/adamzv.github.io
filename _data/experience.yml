@@ -1,23 +1,22 @@
 - role: Software Developer (Data processing)
   time: 2022-Present
   company: Muehlbauer Automation s.r.o.
-  details: |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-    fugiat nulla pariatur.
+  details:
+    - Member of a data processing team responsible for handling of big data
+      within an Industry 4.0 solution used by clients around the world.
+    - Responsible for implementing new functionalities according to product owner requirements, testing and
+      fixing found bugs.
+    - Refactoring existing processing jobs to use better partitioning keys, which are used for saving time series data.
+      This will prevent partition skews and exceeding of maximum partition size.
   technologies_used: [Scala, Apache Spark, Apache Cassandra, PostgreSQL]
 
 - role: Software Developer (Long-term internship)
   time: 2019-2022
   company: Muehlbauer Automation s.r.o.
-  details: |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-    fugiat nulla pariatur.
+  details:
+    - Responsible for implementing new features into internal system using Java EE.
+    - Helped integrate internal Angular component library into an existing Angular project.
+    - Refactored old codebase and implemented new features for an Industry 4.0 project.
   technologies_used:
     [
       Java EE,
