@@ -15,7 +15,12 @@
 # in the templates via {{ site.myvariable }}.
 title: "Hello. I'm Adam Zverka."
 email: "adamzverka@gmail.com"
-description: "I'm a software developer and student from Nitra interested in backend development and IoT. Currently I'm pursuing a Master's degree in Applied Informatics at Constantine the Philosopher University in Nitra and I'm working part-time as Java Developer at Muehlbauer Automation s.r.o."
+description: |
+  I'm a software developer and student from Nitra interested in backend development, cloud, IoT and new technologies.
+  Currently, I'm pursuing a Master's degree in Applied Informatics at Constantine the Philosopher University in Nitra 
+  and I'm working part-time as a Java Developer at Muehlbauer Automation s.r.o working with big data technologies. 
+  <br><br>I love to build scale models ✈️, paint miniatures 🗿, read and learn new things 📖, 
+  tinker with microcontrollers 💻, and take photographs 📸.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://adamzverka.com/" # the base hostname & protocol for your site, e.g. https://example.com
 twitter_username: "adzverka"
