@@ -106,7 +106,7 @@ enable_nav: true
 nav_item:
   - { url: "/", text: "Home" }
   # - { url: '/about', text: 'About' }
-  - { url: "#skills", text: "Skills" }
   - { url: "#experience", text: "Experience" }
+  - { url: "#skills", text: "Skills" }
   - { url: "#portfolio", text: "Projects" }
   # - { url: '/blog', text: 'Blog' }

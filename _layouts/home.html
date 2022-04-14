@@ -2,48 +2,6 @@
 
 {% include home-hero.html %}
 
-<section id="skills">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-
-        {% if site.skills_title != '' %}
-        <h2 class="section-title text-center">{{ site.skills_title }}</h2>
-        {% endif %}
-        {% if site.section_subtitle != '' %}
-        <p class="section-subtitle text-center">{{ site.section_subtitle }}</p>
-        {% endif %}
-
-        <div class="break"></div>
-
-        <div class="wow fadeIn">
-          <div class="content-wrap">
-            <div class="row text-center">
-              {% for item in site.data.skills %}
-              <div class="col-md-4" style="margin-bottom: 32px;">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">{{ item.skill }}</h4>
-                    <p class="card-text">
-                      {% for i in (1..item.level) %}
-                      <span class="fa fa-circle"></span>
-                      {% endfor %}
-                      {% for i in (1..item.remaining) %}
-                      <span class="fa fa-circle-o"></span>
-                      {% endfor %}
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {% endfor %}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="experience">
   <div class="container">
     <div class="row">
@@ -59,43 +17,32 @@
         <div class="break"></div>
 
         <div class="wow fadeIn">
-          <div class="content-wrap">
-
-            <div class="row">
-              {% for experience in site.data.experience %}
-              <div class="col-xs-12">
-                <div class="content experience">
-                  <!-- role -->
-                  <h3 class="title">{{experience.role}}</h3>
-
-                  <!-- company, time range-->
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <h4>{{experience.company}}</h4>
-                    </div>
-                    <!-- TODO add lighter gray (maybe #858585) and align to a separate style -->
-                    <div class="col-xs-6" style="text-align: right;">
-                      <h4>{{experience.time}}</h4>
-                    </div>
-                  </div>
-                  <p class="experience-detail">{{experience.details}}</p>
-
-                  <!-- technologies used as tags -->
-                  {% if experience.technologies_used != empty %}
-                  <div class="tags">
-                    {% for tag in experience.technologies_used %}
-                    <span>{{ tag }}</span>
-                    {% endfor %}
-                  </div>
-                  {% endif %}
-                </div>
-              </div>
-              {% endfor %}
-            </div>
-          </div>
+          {% include experience.html %}
         </div>
       </div>
     </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        {% if site.skills_title != '' %}
+        <h2 class="section-title text-center">{{ site.skills_title }}</h2>
+        {% endif %}
+        {% if site.section_subtitle != '' %}
+        <p class="section-subtitle text-center">{{ site.section_subtitle }}</p>
+        {% endif %}
+
+        <div class="break"></div>
+
+        <div class="wow fadeIn">
+          {% include skills.html %}
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="portfolio">

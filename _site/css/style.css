@@ -5991,6 +5991,22 @@ input.btn {
 /*--------------------------------------------------------------
 	3.0 Posts
 --------------------------------------------------------------*/
+#experience .container {
+  margin-top: 10em; }
+  @media only screen and (max-width: 768px) {
+    #experience .container {
+      margin-top: 2em; } }
+  #experience .container .break {
+    margin: 8em 0; }
+    @media only screen and (max-width: 768px) {
+      #experience .container .break {
+        margin: 2em 0; } }
+  #experience .container .time {
+    color: #858585;
+    text-align: right; }
+  #experience .container h3.title {
+    margin-bottom: 1em; }
+
 #skills .container {
   margin-top: 10em; }
   @media only screen and (max-width: 768px) {
@@ -6088,7 +6104,7 @@ input.btn {
       margin: 2em 0; }
       .content-wrap .content .tags span,
       .content-wrap .content .categories span {
-        color: #9eb1bd;
+        color: #69757D;
         background-color: #eceff1;
         padding: 0.5em 1.5em;
         display: inline-block;

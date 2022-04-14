@@ -1,0 +1,32 @@
+<div class="content-wrap">
+  <div class="row">
+    {% for experience in site.data.experience %}
+    <div class="col-xs-12">
+      <div class="content experience">
+        <!-- role -->
+        <h3 class="title">{{experience.role}}</h3>
+
+        <!-- company, time range-->
+        <div class="row">
+          <div class="col-xs-8">
+            <h4>{{experience.company}}</h4>
+          </div>
+          <div class="col-xs-4 time">
+            <h4>{{experience.time}}</h4>
+          </div>
+        </div>
+        <p class="experience-detail">{{experience.details}}</p>
+
+        <!-- technologies used as tags -->
+        {% if experience.technologies_used != empty %}
+        <div class="tags">
+          {% for tag in experience.technologies_used %}
+          <span>{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
