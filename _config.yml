@@ -32,6 +32,12 @@ skills_title: "Skills"
 experience_title: "Work experience"
 section_title: "Projects"
 
+skills_subtitle: |
+  Programming languages, frameworks or other technologies I'm learning, or I used while working on professional,
+  school or hobby projects. I prefer to work with JVM based languages (<b>Java</b>, <b>Scala</b>)
+  and frameworks (<b>Spring</b>), but I also have some experience with building frontends
+  using mostly <b>Vue.js</b> and <b>Angular</b> frameworks.
+
 # Build settings
 markdown: kramdown
 # theme: phantom # Uncomment once published to RubyGems

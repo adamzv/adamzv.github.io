@@ -134,7 +134,7 @@ input.btn {
 }
 
 .hero-content {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   display: table;
   @include bp-medium {
@@ -283,13 +283,14 @@ input.btn {
 }
 
 .section-subtitle {
-  width: 40%;
+  width: 80%;
   margin: 0 auto;
+  text-align: justify;
   @include bp-xsmall {
     width: 100%;
   }
   @include bp-small {
-    width: 60%;
+    width: 100%;
   }
 }
 

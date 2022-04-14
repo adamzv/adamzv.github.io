@@ -5925,7 +5925,7 @@ input.btn {
       margin: 5em 0 5em 0; } }
 
 .hero-content {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   display: table; }
   @media only screen and (min-width: 992px) and (max-width: 1195px) {
@@ -6046,14 +6046,15 @@ input.btn {
     transform: translateX(-50%); }
 
 .section-subtitle {
-  width: 40%;
-  margin: 0 auto; }
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify; }
   @media only screen and (max-width: 768px) {
     .section-subtitle {
       width: 100%; } }
   @media only screen and (min-width: 770px) and (max-width: 990px) {
     .section-subtitle {
-      width: 60%; } }
+      width: 100%; } }
 
 .content-wrap {
   margin-bottom: 8em; }
