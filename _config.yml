@@ -24,7 +24,7 @@ description: |
   tinker with microcontrollers 💻, and take photographs 📸.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://adamzverka.com/" # the base hostname & protocol for your site, e.g. https://example.com
-twitter_username: "adzverka"
+linkedin_username: "adam-zverka"
 github_username: "adamzv"
 instagram_username: "adam.zverka"
 
