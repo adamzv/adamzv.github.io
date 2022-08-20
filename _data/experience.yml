@@ -1,5 +1,12 @@
+- role: Software Engineer
+  time: 08.2022-Present
+  company: Slovak Telekom
+  details:
+    - Member of a modernisation squad.
+  technologies_used: [Java, Spring, PostgreSQL, OracleDB]
+
 - role: Software Developer (Data processing)
-  time: 2022-Present
+  time: 01.2022-07.2022
   company: Muehlbauer Automation s.r.o.
   details:
     - Member of a data processing team responsible for handling of big data

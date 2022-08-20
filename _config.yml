@@ -17,9 +17,7 @@ title_landing: "Hello. I'm Adam Zverka."
 title: "Adam Zverka"
 email: "adamzverka@gmail.com"
 description: |
-  I'm a software developer and student from Nitra interested in backend development, cloud, IoT and new technologies.
-  Currently, I'm pursuing a Master's degree in Applied Informatics at Constantine the Philosopher University in Nitra 
-  and I'm working part-time as a Java Developer at Muehlbauer Automation s.r.o working with big data technologies. 
+  I'm a software developer and student from Nitra interested in backend development, cloud, IoT and new technologies. Currently, I completed my Master's degree in Applied Informatics at Constantine the Philosopher University in Nitra and currently I'm working as a Software Engineer at Slovak Telekom. 
   <br><br>I love to build scale models ✈️, paint miniatures 🗿, read and learn new things 📖, 
   tinker with microcontrollers 💻, and take photographs 📸.
 baseurl: "" # the subpath of your site, e.g. /blog
