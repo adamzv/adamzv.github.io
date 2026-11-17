@@ -43,19 +43,19 @@
 
         <article class="work-item">
           <h3>Modernising legacy systems without switching them off</h3>
-          <p>Domain services that read from a legacy enterprise system through change data capture, expose clean APIs, and gradually take over writes with validation and idempotency.</p>
+          <p>Many systems depended directly on a large legacy enterprise system, which made every change slow and risky. Instead of a big-bang migration, we built domain services that take over one responsibility at a time. Change data capture streams the legacy data into read models in PostgreSQL, the services expose it through REST APIs and Kafka events, and writes go back through validated, idempotent commands with one consistent error contract. Consumers move to the new APIs one by one. I developed one of these services from its first version to production and later took responsibility for another.</p>
           <p class="meta">Java, Spring Boot, Kafka, PostgreSQL</p>
         </article>
 
         <article class="work-item">
           <h3>Rebuilding CDC and outbox pipelines</h3>
-          <p>Reworked Debezium-based transactional outbox processing into a connector pipeline, making event flows across several services more resilient and easier to recover.</p>
-          <p class="meta">Debezium, Kafka Connect, Kafka</p>
+          <p>Our services publish events with the transactional outbox pattern, streamed into Kafka by Debezium. I reworked the outbox processing into Debezium transforms and connector configuration, so the services no longer each carry their own variant of it. Together with Kafka fan-out, a shared schema cache and replication slots that fail over with high-availability PostgreSQL, this made event flows across several services more resilient and easier to recover.</p>
+          <p class="meta">Debezium, Kafka Connect, Kafka, CloudNativePG</p>
         </article>
 
         <article class="work-item">
           <h3>Using AI to speed up the modernisation</h3>
-          <p>We brought AI into the everyday delivery of the modernisation, from analysing how the legacy systems behave to implementing and shipping new services, and used it to move the programme forward faster.</p>
+          <p>We brought AI into the everyday delivery of the modernisation: analysing how the legacy systems behave, implementing and reviewing changes, and diagnosing services in production. The assistants have controlled access to our services, events, monitoring and logs, so their answers come from the real system, and common tasks became shared procedures the whole team can run. Everything still goes through the same review, tests and secure development lifecycle, which let us move the programme forward faster without lowering the bar.</p>
           <p class="meta">AI-assisted delivery, Java, Kafka, PostgreSQL</p>
         </article>
       </section>
