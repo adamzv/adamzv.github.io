@@ -1,7 +1,119 @@
----
-layout: home
-pagination: 
-  enabled: true
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adam Zverka · Backend engineer</title>
+  <meta name="description" content="Adam Zverka, backend engineer in Bratislava working on event-driven systems, data pipelines and APIs.">
+  <meta property="og:title" content="Adam Zverka · Backend engineer">
+  <meta property="og:description" content="Backend engineer working on event-driven systems, data pipelines and APIs.">
+  <meta property="og:url" content="https://adamzverka.com/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://adamzverka.com/">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <a href="#top" class="name">Adam Zverka</a>
+      <nav aria-label="Main">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-<!-- BLANK -->
+    <main>
+      <section id="top" class="hero">
+        <h1>Backend engineer working on event-driven systems, data pipelines and APIs.</h1>
+        <p class="lead">Senior Backend Engineer at Slovak Telekom since 2022, and Product Owner for a backend services team since September 2026. Mostly Java, Spring Boot, Kafka, PostgreSQL and Kubernetes. Based in Bratislava.</p>
+        <p class="links">
+          <a href="mailto:adamzverka@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/adam-zverka">LinkedIn</a>
+          <a href="https://github.com/adamzv">GitHub</a>
+        </p>
+      </section>
+
+      <section id="work">
+        <h2 class="section-title">Selected work</h2>
+
+        <article class="work-item">
+          <h3>Modernising legacy systems without switching them off</h3>
+          <p>Domain services that read from a legacy enterprise system through change data capture, expose clean APIs, and gradually take over writes with validation and idempotency.</p>
+          <p class="meta">Java, Spring Boot, Kafka, PostgreSQL</p>
+        </article>
+
+        <article class="work-item">
+          <h3>Rebuilding CDC and outbox pipelines</h3>
+          <p>Reworked Debezium-based transactional outbox processing into a connector pipeline, making event flows across several services more resilient and easier to recover.</p>
+          <p class="meta">Debezium, Kafka Connect, Kafka</p>
+        </article>
+
+        <article class="work-item">
+          <h3>Using AI to speed up the modernisation</h3>
+          <p>We brought AI into the everyday delivery of the modernisation, from analysing how the legacy systems behave to implementing and shipping new services, and used it to move the programme forward faster.</p>
+          <p class="meta">AI-assisted delivery, Java, Kafka, PostgreSQL</p>
+        </article>
+      </section>
+
+      <section id="experience">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="entry">
+          <p class="when">2022 – now</p>
+          <div>
+            <h3>Slovak Telekom, Senior Backend Engineer</h3>
+            <p>Started on backend for customer-facing apps, including digital identity verification and order tracking. Since then I've worked on event-driven services for the modernisation of enterprise systems, from design and implementation to integration and production operations. Since September 2026 also Product Owner for a backend services team.</p>
+            <p class="meta">Java, Spring Boot, Kafka, PostgreSQL, Debezium, Kubernetes</p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <p class="when">2019 – 2022</p>
+          <div>
+            <h3>Muehlbauer Automation, Software Developer</h3>
+            <p>Data processing team for an Industry 4.0 solution used by clients around the world. Implemented new features, and refactored processing jobs to use better partitioning keys for time series data, preventing partition skew. Started as a long-term intern working on Java EE and Angular.</p>
+            <p class="meta">Scala, Apache Spark, Apache Cassandra, PostgreSQL, Java EE, Angular</p>
+          </div>
+        </div>
+
+        <h2 class="section-title section-title--spaced">Education</h2>
+        <div class="entry">
+          <p class="when">2022</p>
+          <div>
+            <h3>Master's degree in Applied Informatics</h3>
+            <p>Constantine the Philosopher University in Nitra</p>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="side">
+        <h2 class="section-title">Side project</h2>
+        <article class="work-item">
+          <h3>Pami</h3>
+          <p>An iPhone app that helps a household keep track of what's at home and share one shopping list. I build it with AI on a Spring backend, while keeping a secure development lifecycle (SSDLC) and automated delivery.</p>
+          <p class="meta">Spring Boot, iOS, AI-assisted development</p>
+          <a href="https://yourpami.com">yourpami.com</a>
+        </article>
+
+        <h2 class="section-title section-title--spaced-lg">Outside of work</h2>
+        <p class="plain">I build scale models, paint miniatures, tinker with microcontrollers and take photos.</p>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <p>Open to conversations about backend architecture and freelance work.</p>
+      <p class="links">
+        <a href="mailto:adamzverka@gmail.com">adamzverka@gmail.com</a>
+        <a href="https://www.linkedin.com/in/adam-zverka">LinkedIn</a>
+        <a href="https://github.com/adamzv">GitHub</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
