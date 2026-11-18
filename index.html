@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="page">
     <header class="site-header">
       <a href="#top" class="name">Adam Zverka</a>
@@ -27,10 +28,14 @@
       </nav>
     </header>
 
-    <main>
+    <main id="main">
       <section id="top" class="hero">
-        <h1>Backend engineer working on event-driven systems, data pipelines and APIs.</h1>
-        <p class="lead">Senior Backend Engineer at Slovak Telekom since 2022, and Product Owner for a backend services team since September 2026. Mostly Java, Spring Boot, Kafka, PostgreSQL and Kubernetes. Based in Bratislava.</p>
+        <p class="location">Bratislava, Slovakia</p>
+        <h1>Backend engineer working on <span>event-driven systems,</span> data pipelines and APIs.</h1>
+        <ul class="tech-stack" aria-label="Core technologies">
+          <li>Java</li><li>Spring Boot</li><li>Kafka</li><li>PostgreSQL</li><li>Kubernetes</li><li>Debezium</li>
+        </ul>
+        <p class="lead">Senior Backend Engineer at Slovak Telekom since 2022, and Product Owner for a backend services team since September 2026.</p>
         <p class="links">
           <a href="mailto:adamzverka@gmail.com">Email</a>
           <a href="https://www.linkedin.com/in/adam-zverka">LinkedIn</a>
@@ -43,20 +48,32 @@
 
         <article class="work-item">
           <h3>Modernising legacy systems without switching them off</h3>
-          <p>Domain services that gradually replace direct access to a legacy enterprise system. Data is ingested through change data capture into PostgreSQL read models and exposed through REST APIs and Kafka events. Writes go back to the legacy system as validated, idempotent commands with partial updates and a unified error contract. Consumers migrate to the new APIs one at a time. Developed one service from MVP to production; responsible for another since May 2026.</p>
-          <p class="meta">Java, Spring Boot, Kafka, PostgreSQL</p>
+          <ul class="tech-tags" aria-label="Technologies"><li>Java</li><li>Spring Boot</li><li>Kafka</li><li>PostgreSQL</li></ul>
+          <p class="work-summary">Gradually replacing direct access to a legacy enterprise system with domain services, while keeping existing operations running.</p>
+          <details>
+            <summary>Technical details</summary>
+            <p>Domain services that gradually replace direct access to a legacy enterprise system. Data is ingested through change data capture into PostgreSQL read models and exposed through REST APIs and Kafka events. Writes go back to the legacy system as validated, idempotent commands with partial updates and a unified error contract. Consumers migrate to the new APIs one at a time. Developed one service from MVP to production; responsible for another since May 2026.</p>
+          </details>
         </article>
 
         <article class="work-item">
           <h3>Rebuilding CDC and outbox pipelines</h3>
-          <p>Our services publish events with the transactional outbox pattern, streamed into Kafka by Debezium. I reworked the outbox processing into Debezium transforms and connector configuration, so the services no longer each carry their own variant of it. Together with Kafka fan-out, a shared schema cache and replication slots that fail over with high-availability PostgreSQL, this made event flows across several services more resilient, faster and easier to recover.</p>
-          <p class="meta">Debezium, Kafka Connect, Kafka, CloudNativePG</p>
+          <ul class="tech-tags" aria-label="Technologies"><li>Debezium</li><li>Kafka Connect</li><li>Kafka</li><li>CloudNativePG</li></ul>
+          <p class="work-summary">Consolidating event publishing across services and improving how data pipelines handle failures and recover.</p>
+          <details>
+            <summary>Technical details</summary>
+            <p>Our services publish events with the transactional outbox pattern, streamed into Kafka by Debezium. I reworked the outbox processing into Debezium transforms and connector configuration, so the services no longer each carry their own variant of it. Together with Kafka fan-out, a shared schema cache and replication slots that fail over with high-availability PostgreSQL, this made event flows across several services more resilient, faster and easier to recover.</p>
+          </details>
         </article>
 
         <article class="work-item">
           <h3>Using AI to speed up the modernisation</h3>
-          <p>We brought AI into the everyday delivery of the modernisation: analysing how the legacy systems behave, implementing and reviewing changes, and diagnosing services in production. The assistants have controlled access to our services, events, monitoring and logs, so their answers come from the real system, and common tasks became shared procedures the whole team can run. Everything still goes through the same review, tests and secure development lifecycle, which let us move the programme forward faster without lowering the bar.</p>
-          <p class="meta">AI-assisted delivery, Java, Kafka, PostgreSQL</p>
+          <ul class="tech-tags" aria-label="Technologies"><li>AI-assisted delivery</li><li>Java</li><li>Kafka</li><li>PostgreSQL</li></ul>
+          <p class="work-summary">Giving assistants controlled access to real system context for development, code review and production diagnostics.</p>
+          <details>
+            <summary>Technical details</summary>
+            <p>We brought AI into the everyday delivery of the modernisation: analysing how the legacy systems behave, implementing and reviewing changes, and diagnosing services in production. The assistants have controlled access to our services, events, monitoring and logs, so their answers come from the real system, and common tasks became shared procedures the whole team can run. Everything still goes through the same review, tests and secure development lifecycle, which let us move the programme forward faster without lowering the bar.</p>
+          </details>
         </article>
       </section>
 
@@ -66,16 +83,18 @@
         <div class="entry">
           <p class="when">2022 – now</p>
           <div>
-            <h3>Slovak Telekom, Senior Backend Engineer</h3>
+            <h3>Slovak Telekom</h3>
+            <p class="role">Senior Backend Engineer · Product Owner since Sep 2026</p>
+            <ul class="tech-tags" aria-label="Technologies"><li>Java</li><li>Spring Boot</li><li>Kafka</li><li>PostgreSQL</li><li>Debezium</li><li>Kubernetes</li></ul>
             <p>Started on backend for customer-facing apps, including digital identity verification and order tracking. Since then I've worked on event-driven services for the modernisation of enterprise systems, from design and implementation to integration and production operations. Since September 2026 also Product Owner for a backend services team.</p>
-            <p class="meta">Java, Spring Boot, Kafka, PostgreSQL, Debezium, Kubernetes</p>
           </div>
         </div>
 
         <div class="entry">
           <p class="when">Jul 2026 – now</p>
           <div>
-            <h3>Movement Institute, Freelance Software Engineer</h3>
+            <h3>Movement Institute</h3>
+            <p class="role">Software Engineer <span class="employment-type">Freelance</span></p>
             <p>Freelance development of a booking and business management system alongside my full-time role. Built self-service group bookings and course enrolment, and improved staff scheduling and business reporting.</p>
             <p>Introduced automated tests, CI/CD with documented rollback procedures, and a pre-production environment using anonymised data. I also review and deploy changes from other contributors, using AI-assisted workflows for development and review.</p>
           </div>
@@ -84,9 +103,10 @@
         <div class="entry">
           <p class="when">2019 – 2022</p>
           <div>
-            <h3>Muehlbauer Automation, Software Developer</h3>
+            <h3>Muehlbauer Automation</h3>
+            <p class="role">Software Developer</p>
+            <ul class="tech-tags" aria-label="Technologies"><li>Scala</li><li>Apache Spark</li><li>Apache Cassandra</li><li>PostgreSQL</li><li>Java EE</li><li>Angular</li></ul>
             <p>Data processing team for an Industry 4.0 solution used by clients around the world. Implemented new features, and refactored processing jobs to use better partitioning keys for time series data, preventing partition skew. Started as a long-term intern working on Java EE and Angular.</p>
-            <p class="meta">Scala, Apache Spark, Apache Cassandra, PostgreSQL, Java EE, Angular</p>
           </div>
         </div>
 
@@ -101,18 +121,19 @@
 
       </section>
 
-      <section id="side">
-        <h2 class="section-title">Side project</h2>
-        <article class="work-item">
+      <div id="side" class="personal-grid">
+        <section aria-labelledby="side-project-title">
+          <h2 id="side-project-title" class="personal-title">Side project</h2>
           <h3>Pami</h3>
+          <ul class="tech-tags" aria-label="Technologies"><li>Java</li><li>Spring Boot</li><li>React</li><li>TypeScript</li><li>Capacitor</li></ul>
           <p>An iPhone and web app that helps a household keep track of what's at home and share one shopping list. I build it with AI on a Spring backend, while keeping a secure development lifecycle (SSDLC) and automated delivery.</p>
-          <p class="meta">Java, Spring Boot, React, TypeScript, Capacitor</p>
-          <a href="https://yourpami.com">yourpami.com</a>
-        </article>
-
-        <h2 class="section-title section-title--spaced-lg">Outside of work</h2>
-        <p class="plain">I like making things I can hold in my hands — scale models, Gundam kits, 3D prints and small electronics projects. I also enjoy film and digital photography, tending a small balcony garden and automating things around the home.</p>
-      </section>
+          <a class="project-link" href="https://yourpami.com">Explore Pami ↗</a>
+        </section>
+        <section aria-labelledby="outside-work-title">
+          <h2 id="outside-work-title" class="personal-title">Outside of work</h2>
+          <p>I like making things I can hold in my hands — scale models, Gundam kits, 3D prints and small electronics projects. I also enjoy film and digital photography, tending a small balcony garden and automating things around the home.</p>
+        </section>
+      </div>
     </main>
 
     <footer id="contact" class="site-footer">
