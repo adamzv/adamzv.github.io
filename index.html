@@ -43,13 +43,13 @@
 
         <article class="work-item">
           <h3>Modernising legacy systems without switching them off</h3>
-          <p>Many systems depended directly on a large legacy enterprise system, which made every change slow and risky. Instead of a big-bang migration, we built domain services that take over one responsibility at a time. Change data capture streams the legacy data into read models in PostgreSQL, the services expose it through REST APIs and Kafka events, and writes go back through validated, idempotent commands with one consistent error contract. Consumers move to the new APIs one by one. I developed one of these services from its first version to production and later took responsibility for another.</p>
+          <p>Domain services that gradually replace direct access to a legacy enterprise system. Data is ingested through change data capture into PostgreSQL read models and exposed through REST APIs and Kafka events. Writes go back to the legacy system as validated, idempotent commands with partial updates and a unified error contract. Consumers migrate to the new APIs one at a time. Developed one service from MVP to production; responsible for another since May 2026.</p>
           <p class="meta">Java, Spring Boot, Kafka, PostgreSQL</p>
         </article>
 
         <article class="work-item">
           <h3>Rebuilding CDC and outbox pipelines</h3>
-          <p>Our services publish events with the transactional outbox pattern, streamed into Kafka by Debezium. I reworked the outbox processing into Debezium transforms and connector configuration, so the services no longer each carry their own variant of it. Together with Kafka fan-out, a shared schema cache and replication slots that fail over with high-availability PostgreSQL, this made event flows across several services more resilient and easier to recover.</p>
+          <p>Our services publish events with the transactional outbox pattern, streamed into Kafka by Debezium. I reworked the outbox processing into Debezium transforms and connector configuration, so the services no longer each carry their own variant of it. Together with Kafka fan-out, a shared schema cache and replication slots that fail over with high-availability PostgreSQL, this made event flows across several services more resilient, faster and easier to recover.</p>
           <p class="meta">Debezium, Kafka Connect, Kafka, CloudNativePG</p>
         </article>
 
